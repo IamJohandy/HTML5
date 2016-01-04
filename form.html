@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="mystyles.css" />
+        <title>Demo HTML5</title>
+    </head>
+    <body>
+        <p>Hello World!</p>
+
+        <form id="myform">
+            <label for="date-input">Please choose a date:</label>
+            <input type="date" id="date-input" />
+
+            <label for="time-input">Please enter a time:</label>
+            <input type="time" id="time-input" />
+
+            <label for="month-input">Please select a month:</label>
+            <input type="month" id="month-input" /><br />
+
+            <label for="week-input">Please select a week:</label>
+            <input type="week" id="week-input" /><br />
+
+            <label for="range-data">Range: </label>
+            <input type="range" id="range-data" min="1" max="10"><br />
+
+            <label for="search-data">Search: </label>
+            <input type="search" id="search-data" placeholder="Skriv noe..." /><br />
+            
+            <label for="tel-data">Telephone: </label>
+            <input type="tel" id="tel-data" required />
+            <input type="submit" value="Submit" /><br />
+
+            <label for="email-data">Email: </label>
+            <input type="email" id="email-data" required multiple /><br />
+
+            <label for="color-data">Color: </label>
+            <input type="color" id="color-data" />
+
+            <label for="genderlist-data">Select gender: </label>
+            <input type="text" list="myDataList">
+            <datalist id="myDataList">
+                <option label="Male" value="Male"></option>
+                <option label="Female" value="Female"></option>
+                <option label="I'm offended" value="I'm offended"></option>
+            </datalist>
+
+            <label for="progress-data">Progress Bar: </label>
+            <progress value="5" max="15"></progress>
+
+            <label for="meter-data">Meter: </label>
+            <meter id="meter-data" min="10" max="100" value="19" low="20" high="70" optimum="50"></meter>
+
+        </form>
+
+        <label for="outsideText-data">Other text: </label>
+        <input type="text" id="outsideText-data" form="myform">
+
+    </body>
+</html>
